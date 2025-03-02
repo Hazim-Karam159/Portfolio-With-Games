@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Speed Game</title>
+    <link rel="stylesheet" href="../CSS/speedGame.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="../Images/ZoOoMA.jpg" alt="Hazim Karam" class="profile-image">
+                <div>
+                    <h1>Hazim Karam</h1>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="../Index.html#about">About</a></li>
+                <li><a href="../Index.html#projects">Projects</a></li>
+                <li><a href="../Index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container game-container">
+        <h1>Number Speed Game</h1>
+        <p>Type the number before it disappears!</p>
+
+        <div id="countdown-screen" class="overlay">
+            <div class="countdown-text" id="countdown">3</div>
+        </div>
+
+        <div class="game-box">
+            <div id="random-number">?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type here" maxlength="1">
+
+        <div class="info">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="time">0</span> sec</p>
+        </div>
+
+        <button id="start-btn">Start Game</button>
+        <button id="stop-btn" disabled>End Game</button>
+
+        <div id="celebration-screen" class="overlay hidden">
+            <div class="celebration-box">
+                <h2 id="celebration-message">🎉 You Won 🎉</h2>
+                <p>Your Score: <span id="final-score">0</span></p>
+                <p>Total Time: <span id="final-time">0</span> sec</p>
+                <button id="ok-btn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hazim Karam. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hazim-karam-b14737266" target="_blank"><i class="fab fa-linkedin"></i></a>
+                
+                <a href="https://github.com/Hazim-Karam159" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:hazimkaram159@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+   
+    <button id="scroll-to-top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../JS/speedGame.js"></script>
+</body>
+</html>
