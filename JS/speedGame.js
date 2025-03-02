@@ -82,8 +82,13 @@ function stopGame() {
     randomNumberEl.textContent = "?";
     canType = false;
     
-       
+    if (score === 5) {
+
+        celebrationMessage.textContent = " 🎉 You Won! 🎉";
+    } else {
+
         celebrationMessage.textContent = " Game Over! ";
+    }
         
         finalTime.textContent = `Time: ${elapsedTime} seconds`;
         
@@ -205,11 +210,11 @@ userInput.addEventListener("input", () => {
 
         if (score === 5) {
             clearInterval(interval); 
-            celebrationMessage.textContent = "🎉 You Won! 🎉"; 
             finalScore.textContent = `Score: ${score}`; 
             finalTime.textContent = `Time: ${elapsedTime} seconds`; 
             celebrateScore(); 
             stopGame(); 
+            celebrationMessage.textContent = "🎉 You Won! 🎉"; 
         }
        
     }
