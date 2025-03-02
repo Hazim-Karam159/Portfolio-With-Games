@@ -196,7 +196,6 @@ function celebrateScore() {
     }, 5000);
 }
 
-
 userInput.addEventListener("input", () => {
     if (canType && userInput.value === String(currentNumber)) {
         score++;
@@ -212,8 +211,8 @@ userInput.addEventListener("input", () => {
             celebrateScore(); 
             stopGame(); 
         }
+       
     }
-    userInput.focus(); 
 });
 
 startBtn.addEventListener("click", startGame);

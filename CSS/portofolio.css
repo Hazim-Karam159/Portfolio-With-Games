@@ -13,7 +13,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
+.container .btn{
+    margin-top: 10px;
+}
+
 
 
 header {
@@ -142,6 +147,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
+    
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
